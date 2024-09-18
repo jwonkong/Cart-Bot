@@ -1,0 +1,28 @@
+<!-- Behavior tree that sequentially navigates locations naively -->
+<root main_tree_to_execute = "MainTree" >
+  <BehaviorTree ID="MainTree">
+    <Sequence name="sequence">
+      <SetBlackboard output_key="loc" value="1" />
+      <Retry name="retry">
+        <Patrol name="Patrol" loc_in="{loc}" loc_out="{loc}" cart_loc_out="{cart_loc}"/>
+      </Retry>
+      <GoToCart name="GotoCart" cart_loc_in="{cart_loc}"/>
+      <DockCart name="DockCart" />
+      <ParkCart name="ParkCart" />
+    </Sequence>
+  </BehaviorTree>
+</root>
+
+<!--  
+behaviortree_cpp_v3에서는 우리가 알던 fallback이나 recovery등이 없다.
+bt_cpp 공식 사이트의 버전을 3.8로 낮추고 찾아보면 나오는 옵션 중에서 비슷한 기능을 찾아서 사용해야 하는데, 그 예시가 위에 있는 Retry노드이다.
+Retry노드는   
+      <DockCart name="DockCart" />
+      <ParkCart name="ParkCart" />
+      <OpenGripper name="OpenGripper">
+<DockCart name="DockCart" />
+<ParkCart name="ParkCart" />
+<DockCart name="DockCart" /> 
+      
+-->
+

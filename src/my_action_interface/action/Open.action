@@ -1,0 +1,8 @@
+# Goal open=1: 열기, open=0: 닫기
+int32 open
+---
+# Result
+int32[] sequence
+---
+# Feedback
+int32[] partial_sequence

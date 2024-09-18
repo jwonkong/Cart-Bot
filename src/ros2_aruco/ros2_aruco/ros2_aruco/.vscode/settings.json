@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/yyj/my_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+        "/home/yyj/my_ws/install/ros2_aruco/lib/python3.10/site-packages",
+        "/home/yyj/my_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages",
+        "/home/yyj/my_ws/install/aruco_msgs/local/lib/python3.10/dist-packages",
+        "/home/yyj/robot_ws/build/test_pkg_rclpy",
+        "/home/yyj/robot_ws/install/test_pkg_rclpy/lib/python3.10/site-packages",
+        "/home/yyj/robot_ws/install/joystick_ros2/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/yyj/my_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages",
+        "/home/yyj/my_ws/install/ros2_aruco/lib/python3.10/site-packages",
+        "/home/yyj/my_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages",
+        "/home/yyj/my_ws/install/aruco_msgs/local/lib/python3.10/dist-packages",
+        "/home/yyj/robot_ws/build/test_pkg_rclpy",
+        "/home/yyj/robot_ws/install/test_pkg_rclpy/lib/python3.10/site-packages",
+        "/home/yyj/robot_ws/install/joystick_ros2/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
